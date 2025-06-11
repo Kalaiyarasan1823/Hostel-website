@@ -1,340 +1,218 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooms & Facilities - SK Hostel</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms & Facilities - SK Hostel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="fas fa-bed me-2"></i>SK Hostel
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-bed text-primary me-2"></i>SK Hostel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="rooms.html">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-5 mt-5">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold" data-aos="fade-down">Our Rooms & Facilities</h1>
+      <p class="text-muted" data-aos="fade-up">Choose the room that fits your journey</p>
+    </div>
+
+    <!-- Rooms Grid -->
+    <div class="row g-4">
+      <!-- Shared Dormitory -->
+      <div class="col-lg-6" data-aos="fade-up">
+        <div class="card border-0 shadow-sm h-100">
+          <div id="sharedDormCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-top">
+              <div class="carousel-item active">
+                <img src="Images/SD.jpeg" class="d-block w-100" alt="Shared Dormitory">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" class="d-block w-100" alt="Shared Dormitory Beds">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sharedDormCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
             </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <i class="fas fa-home me-1"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="rooms.html">
-                            <i class="fas fa-door-open me-1"></i>Rooms & Facilities
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">
-                            <i class="fas fa-concierge-bell me-1"></i>Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            <i class="fas fa-info-circle me-1"></i>About Us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <i class="fas fa-envelope me-1"></i>Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#sharedDormCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Shared Dormitory</h5>
+            <p class="card-text text-muted">Perfect for backpackers, 4–8 beds, lockers, shared bathrooms.</p>
+            <p><span class="fw-bold text-primary">Rs.250</span> / night</p>
+            <a href="contact.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
         </div>
-    </nav>
+      </div>
 
-    <main class="pt-5 mt-4">
-        <div class="container py-5">
-            <!-- Page Header -->
-            <div class="row mb-5">
-                <div class="text-white text-center p-5">
-                    <h1 class="fw-bold text-light mb-3">Rooms & Facilities</h1>
-                    <p class="lead text-light">Discover our comfortable accommodations and modern facilities</p>
-                </div>
+      <!-- Private Room -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 shadow-sm h-100">
+          <div id="privateRoomCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-top">
+              <div class="carousel-item active">
+                <img src="Images/pr.jpg" class="d-block w-100" alt="Private Room">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" class="d-block w-100" alt="Private Room Interior">
+              </div>
             </div>
-
-            <!-- Room Types -->
-            <section class="mb-5">
-                <h2 class="fw-bold mb-4 text-light">Our Room Types</h2>
-                
-                <div class="row g-4">
-                    <!-- Shared Dormitory -->
-                    <div class="col-lg-6">
-                        <div class="card border-0 shadow-sm h-100">
-                            <div class="row g-0 h-100">
-                                <div class="col-md-5">
-                                    <div class="bg-secondary d-flex align-items-center justify-content-center h-100">
-                                        <div class="text-center p-4">
-                                            <i class="fas fa-bed fa-4x text-primary mb-3"></i>
-                                            <h5 class="text-light">Shared Dorm</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="card-body p-4">
-                                        <h5 class="card-title text-light">Shared Dormitory</h5>
-                                        <p class="card-text text-muted">Budget-friendly accommodation perfect for solo travelers and backpackers.</p>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-check text-success me-2"></i>4-8 beds per room</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Individual lockers</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Shared bathroom</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Reading lights</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Power outlets</li>
-                                        </ul>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <span class="h5 text-primary">Rs.250</span>
-                                                <small class="text-muted">/night</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Private Room -->
-                    <div class="col-lg-6">
-                        <div class="card border-0 shadow-sm h-100">
-                            <div class="row g-0 h-100">
-                                <div class="col-md-5">
-                                    <div class="bg-secondary d-flex align-items-center justify-content-center h-100">
-                                        <div class="text-center p-4">
-                                            <i class="fas fa-door-closed fa-4x text-primary mb-3"></i>
-                                            <h5 class="text-light">Private Room</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="card-body p-4">
-                                        <h5 class="card-title text-light">Private Room</h5>
-                                        <p class="card-text text-muted">Comfortable private accommodation for couples or those seeking privacy.</p>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-check text-success me-2"></i>Double or twin beds</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Private bathroom</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Wardrobe</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Desk and chair</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Window view</li>
-                                        </ul>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <span class="h5 text-primary">Rs.650</span>
-                                                <small class="text-muted">/night</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Family Room -->
-                    <div class="col-lg-6">
-                        <div class="card border-0 shadow-sm h-100">
-                            <div class="row g-0 h-100">
-                                <div class="col-md-5">
-                                    <div class="bg-secondary d-flex align-items-center justify-content-center h-100">
-                                        <div class="text-center p-4">
-                                            <i class="fas fa-home fa-4x text-primary mb-3"></i>
-                                            <h5 class="text-light">Family Room</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="card-body p-4">
-                                        <h5 class="card-title text-light">Family Room</h5>
-                                        <p class="card-text text-muted">Spacious accommodation perfect for families and small groups.</p>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-check text-success me-2"></i>3-4 beds</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Private bathroom</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Seating area</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Mini fridge</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Extra space</li>
-                                        </ul>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <span class="h5 text-primary">Rs.1200</span>
-                                                <small class="text-muted">/night</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Female Only Dorm -->
-                    <div class="col-lg-6">
-                        <div class="card border-0 shadow-sm h-100">
-                            <div class="row g-0 h-100">
-                                <div class="col-md-5">
-                                    <div class="bg-secondary d-flex align-items-center justify-content-center h-100">
-                                        <div class="text-center p-4">
-                                            <i class="fas fa-female fa-4x text-primary mb-3"></i>
-                                            <h5 class="text-light">Female Only</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="card-body p-4">
-                                        <h5 class="card-title text-light">Female Only Dorm</h5>
-                                        <p class="card-text text-muted">Safe and comfortable accommodation exclusively for female travelers.</p>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-check text-success me-2"></i>4-6 beds per room</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Female only access</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Shared bathroom</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Extra security</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Hair dryer included</li>
-                                        </ul>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <span class="h5 text-primary">Rs.300</span>
-                                                <small class="text-muted">/night</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Facilities -->
-            <section class="mb-5">
-                <h2 class="fw-bold mb-4 text-light">Our Facilities</h2>
-                
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card border-0 shadow-sm text-center h-100">
-                            <div class="card-body p-4">
-                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                    <i class="fas fa-utensils fa-lg"></i>
-                                </div>
-                                <h5 class="card-title text-light">Shared Kitchen</h5>
-                                <p class="card-text text-muted">Fully equipped kitchen with refrigerator, stove, microwave, and all cooking utensils.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card border-0 shadow-sm text-center h-100">
-                            <div class="card-body p-4">
-                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                    <i class="fas fa-couch fa-lg"></i>
-                                </div>
-                                <h5 class="card-title text-light">Common Area</h5>
-                                <p class="card-text text-muted">Comfortable lounge area with TV, games, and seating for socializing with other guests.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card border-0 shadow-sm text-center h-100">
-                            <div class="card-body p-4">
-                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                    <i class="fas fa-tshirt fa-lg"></i>
-                                </div>
-                                <h5 class="card-title text-light">Laundry Room</h5>
-                                <p class="card-text text-muted">Self-service laundry facilities with washing machines, dryers, and ironing board.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card border-0 shadow-sm text-center h-100">
-                            <div class="card-body p-4">
-                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                    <i class="fas fa-luggage-cart fa-lg"></i>
-                                </div>
-                                <h5 class="card-title text-light">Luggage Storage</h5>
-                                <p class="card-text text-muted">Secure luggage storage available for early arrivals and late departures.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card border-0 shadow-sm text-center h-100">
-                            <div class="card-body p-4">
-                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                    <i class="fas fa-bicycle fa-lg"></i>
-                                </div>
-                                <h5 class="card-title text-light">Bike Rental</h5>
-                                <p class="card-text text-muted">Bicycle rental service available for exploring the city at your own pace.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card border-0 shadow-sm text-center h-100">
-                            <div class="card-body p-4">
-                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                    <i class="fas fa-parking fa-lg"></i>
-                                </div>
-                                <h5 class="card-title text-light">Parking</h5>
-                                <p class="card-text text-muted">Limited parking spaces available for guests with vehicles (additional charge).</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Booking CTA -->
-            <section class="text-center">
-                <div class="bg-primary text-white rounded p-5">
-                    <h3 class="fw-bold mb-3">Ready to Book Your Room?</h3>
-                    <p class="lead mb-4">Contact us now to reserve your perfect accommodation at SK Hostel</p>
-                    <a href="contact.html" class="btn btn-light btn-lg">
-                        <i class="fas fa-calendar-check me-2"></i>Book Now
-                    </a>
-                </div>
-            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#privateRoomCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#privateRoomCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Private Room</h5>
+            <p class="card-text text-muted">Ideal for couples or solo guests seeking privacy. Includes private bathroom and desk.</p>
+            <p><span class="fw-bold text-primary">Rs.650</span> / night</p>
+            <a href="contact.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
         </div>
-    </main>
+      </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5><i class="fas fa-bed me-2"></i>SK Hostel</h5>
-                    <p class="text-muted">Your comfortable home away from home.</p>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
-                        <li><a href="rooms.html" class="text-muted text-decoration-none">Rooms & Facilities</a></li>
-                        <li><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
-                        <li><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
-                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <h5>Contact Info</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li><i class="fas fa-map-marker-alt me-2"></i>123 VG Street, Coimbatore</li>
-                        <li><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope me-2"></i>info@skhostel.com</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="text-center">
-                <p class="text-muted mb-0">&copy; 2024 SK Hostel. All rights reserved.</p>
-            </div>
+      <!-- Family Room -->
+      <div class="col-lg-6" data-aos="fade-up">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="Images/fr.jpeg" class="card-img-top" alt="Family Room">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Family Room</h5>
+            <p class="card-text text-muted">Spacious accommodation for families. 3–4 beds, seating area, fridge.</p>
+            <p><span class="fw-bold text-primary">Rs.1200</span> / night</p>
+            <a href="contact.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Female Only Dorm -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="Images/fod.jpeg" class="card-img-top" alt="Female Only Dorm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Female Only Dorm</h5>
+            <p class="card-text text-muted">Safe space for female guests with extra security and essentials.</p>
+            <p><span class="fw-bold text-primary">Rs.300</span> / night</p>
+            <a href="contact.html" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark py-4 text-center text-light">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 SK Hostel. All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- Floating Book Now Button -->
+<button type="button" class="btn btn-secondary rounded-circle shadow-lg position-fixed fs-4 p-3"
+        style="bottom: 25px; right: 25px; z-index: 1050; width: 65px; height: 65px;"
+        data-bs-toggle="modal" data-bs-target="#bookingModal">
+  <i class="fas fa-calendar-check"></i>
+</button>
+
+<!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="bookingModalLabel">Book Your Stay</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="roomType" class="form-label">Room Type</label>
+            <select class="form-select" id="roomType">
+              <option selected>Choose...</option>
+              <option>Shared Dormitory</option>
+              <option>Private Room</option>
+              <option>Family Room</option>
+              <option>Female Only Dorm</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="checkin" class="form-label">Check-in Date</label>
+            <input type="date" class="form-control" id="checkin">
+          </div>
+          <div class="mb-3">
+            <label for="checkout" class="form-label">Check-out Date</label>
+            <input type="date" class="form-control" id="checkout">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Floating Chat Button -->
+<button class="btn btn-success rounded-circle shadow-lg position-fixed fs-4 p-3" 
+        style="bottom: 25px; left: 25px; z-index: 1050; width: 65px; height: 65px;" 
+        data-bs-toggle="offcanvas" data-bs-target="#chatBox" aria-controls="chatBox" title="Chat with us">
+  <i class="fas fa-comment-alt"></i>
+</button>
+
+<!-- Offcanvas Chat Box -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="chatBox" aria-labelledby="chatLabel" data-bs-scroll="true" data-bs-backdrop="false">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="chatLabel"><i class="fas fa-comments text-primary me-2"></i>Live Chat</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div class="flex-grow-1">
+      <div class="bg-light p-3 rounded mb-3">
+        <p class="mb-1 fw-bold">SK Hostel:</p>
+        <p class="mb-0">Hi there! 👋 How can we help you?</p>
+      </div>
+    </div>
+    <form>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Type a message..." disabled>
+        <button class="btn btn-primary" type="button" disabled><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </form>
+    <small class="text-muted mt-2 d-block text-end">This is a demo chat box</small>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+
 </body>
 </html>
