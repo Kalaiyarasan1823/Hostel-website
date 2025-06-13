@@ -1,259 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us - SK Hostel</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Hostel - Your Home Away From Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-light">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-bed text-primary me-2"></i>SK Hostel</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-bed me-2"></i>SK Hostel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            <i class="fas fa-calendar-check me-1"></i>Book Now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-light bg-gradient text-dark py-5" style="margin-top: 76px">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About SK Hostel</h1>
+            <p>Discover our story, team, and what makes us special.</p>
+        </div>
+    </section>
+
+    <!-- Our Story + Image -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <img src="images/h3.jpeg" alt="Our Story" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Our Story</h2>
+                    <p class="text-muted mb-3">
+                        Since 2010, SK Hostel has been dedicated to creating a community-driven space for travelers and
+                        students.
+                        We blend comfort, safety, and social vibes in one place.
+                    </p>
+                    <p class="text-muted">
+                        With spacious dorms and private rooms, modern amenities, and events, we’ve become a favorite in
+                        the city.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Stats Section (Modern Style) -->
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <!-- Heading Row -->
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <h3 class="fw-bold">The main benefits to choose SK Hostel</h3>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted mb-0">
+                        Discover why thousands of travelers choose our hostel for comfort, community, and convenience.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="row text-center bg-white rounded shadow-sm g-0">
+                <div class="col-md-4 py-4 border-end">
+                    <h2 class="fw-bold text-primary mb-1">240+</h2>
+                    <p class="text-muted small mb-0">Guests hosted</p>
+                </div>
+                <div class="col-md-4 py-4 border-end">
+                    <h2 class="fw-bold text-primary mb-1">60+</h2>
+                    <p class="text-muted small mb-0">Events and Activities</p>
+                </div>
+                <div class="col-md-4 py-4">
+                    <h2 class="fw-bold text-primary mb-1">98%</h2>
+                    <p class="text-muted small mb-0">Satisfaction Rating</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Features Grid -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">What We Offer</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <i class="bi bi-wifi fs-1 text-primary"></i>
+                    <h5 class="mt-2">Free Wi-Fi</h5>
+                    <p>Stay connected with high-speed internet.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-house-door fs-1 text-primary"></i>
+                    <h5 class="mt-2">Comfortable Rooms</h5>
+                    <p>Choose between dorms and private rooms.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-people fs-1 text-primary"></i>
+                    <h5 class="mt-2">Community Events</h5>
+                    <p>Meet fellow travelers through fun activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Pricing Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">Hostel rooms</h2>
+                <a href="#" class="btn btn-outline-primary btn-sm">View all rooms</a>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Room Card 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                                class="card-img-top rounded-top-4" alt="6-Bed Room"
+                                style="height: 220px; object-fit: cover;">
+                            <span
+                                class="position-absolute top-0 start-0 m-2 bg-white text-dark px-3 py-1 rounded fw-semibold shadow">$18
+                                <small>/ 1 night</small></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bed in 6-Bed Room with Shared Bathroom</h5>
+                            <p class="mb-2 text-muted small">
+                                <i class="bi bi-person"></i> 2 Sleeps &nbsp;&nbsp;
+                                <i class="bi bi-columns-gap"></i> 1 bunk bed
+                            </p>
+                            <a href="#" class="text-decoration-none fw-semibold text-primary">
+                                See availability <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                                class="card-img-top rounded-top-4" alt="Double Room"
+                                style="height: 220px; object-fit: cover;">
+                            <span
+                                class="position-absolute top-0 start-0 m-2 bg-white text-dark px-3 py-1 rounded fw-semibold shadow">$35
+                                <small>/ 1 night</small></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Double Room with Private Bathroom</h5>
+                            <p class="mb-2 text-muted small">
+                                <i class="bi bi-person"></i> 2 Sleeps &nbsp;&nbsp;
+                                <i class="bi bi-columns-gap"></i> 2 twin beds
+                            </p>
+                            <a href="#" class="text-decoration-none fw-semibold text-primary">
+                                See availability <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="position-relative">
+                            <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                                class="card-img-top rounded-top-4" alt="Apartment"
+                                style="height: 220px; object-fit: cover;">
+                            <span
+                                class="position-absolute top-0 start-0 m-2 bg-white text-dark px-3 py-1 rounded fw-semibold shadow">$99
+                                <small>/ 1 night</small></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Apartment with Private Bathroom</h5>
+                            <p class="mb-2 text-muted small">
+                                <i class="bi bi-person"></i> 1 full bed &nbsp;&nbsp;
+                                <i class="bi bi-columns-gap"></i> 2 twin beds
+                            </p>
+                            <a href="#" class="text-decoration-none fw-semibold text-primary">
+                                See availability <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Steps Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Column: Steps -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-5">Stages of booking a room</h2>
+
+                    <!-- Step 1 -->
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-light p-3 rounded me-3">
+                            <i class="bi bi-calendar-check fs-3 text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-semibold mb-1">Room reservation</h5>
+                            <p class="text-muted mb-0 small">
+                                Select your room and date preferences online with ease.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-light p-3 rounded me-3">
+                            <i class="bi bi-file-earmark-text fs-3 text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-semibold mb-1">Filling in documents and payment</h5>
+                            <p class="text-muted mb-0 small">
+                                Complete necessary forms and securely pay online or offline.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-light p-3 rounded me-3">
+                            <i class="bi bi-door-open fs-3 text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-semibold mb-1">Check in hostel</h5>
+                            <p class="text-muted mb-0 small">
+                                Arrive at the hostel and enjoy your comfortable stay!
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#rooms" class="btn btn-primary mt-3 px-4">Choose room</a>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="col-md-6 mt-4 mt-md-0 text-center">
+                    <img src="https://images.pexels.com/photos/618681/pexels-photo-618681.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Booking Process" class="img-fluid rounded shadow">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rule and Contact Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- Left Column: Rules -->
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-4">Rule settlement, eviction and stay</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Check-in time: 2:00 PM | Check-out time: 12:00 PM
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Full payment required at the time of check-in
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Government-issued ID/passport is mandatory
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            No loud music or parties after 10:00 PM
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="col-md-6">
+                    <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+                        <h4 class="fw-bold mb-4">We are ready answer your question</h4>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send message</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="mb-5">
+                <h2 class="fw-bold">Frequently asked<br>questions about hostel</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- FAQ Card 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-2">How do you choose the right hostel?</h6>
+                            <button class="btn btn-sm toggle-icon" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <span class="icon">▼</span>
+                            </button>
+                        </div>
+                        <div class="collapse show" id="faq1">
+                            <p class="text-muted small mb-0">
+                                Look at reviews, location, safety, and services. Choose what fits your travel style and
+                                budget.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-2">How many people are in a hostel room?</h6>
+                            <button class="btn btn-sm toggle-icon" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <span class="icon">▼</span>
+                            </button>
+                        </div>
+                        <div class="collapse" id="faq2">
+                            <p class="text-muted small mb-0">
+                                Rooms typically hold 4–8 people. Some have larger dorms or smaller private rooms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Box -->
+                <div class="col-md-4">
+                    <div
+                        class="h-100 bg-primary text-white rounded p-4 d-flex flex-column justify-content-between shadow-sm">
+                        <div>
+                            <h6 class="fw-bold">Do you have any questions?</h6>
+                            <p class="small">Diam phasellus vestibulum lorem sed risus ultricies tristique</p>
+                        </div>
+                        <a href="#contact" class="btn btn-light btn-sm mt-3">Ask a question</a>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-2">Are there private rooms in Hostels?</h6>
+                            <button class="btn btn-sm toggle-icon" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <span class="icon">▼</span>
+                            </button>
+                        </div>
+                        <div class="collapse" id="faq3">
+                            <p class="text-muted small mb-0">
+                                Yes! Most hostels offer private rooms alongside dorms. Great for couples or solo
+                                travelers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 4 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-2">How do I keep my things safe in a hostel?</h6>
+                            <button class="btn btn-sm toggle-icon" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                <span class="icon">▼</span>
+                            </button>
+                        </div>
+                        <div class="collapse" id="faq4">
+                            <p class="text-muted small mb-0">
+                                Use lockers, bring your own lock, and avoid leaving valuables in shared spaces.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 5 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-2">How do you stay safe in a hostel?</h6>
+                            <button class="btn btn-sm toggle-icon" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                <span class="icon">▼</span>
+                            </button>
+                        </div>
+                        <div class="collapse" id="faq5">
+                            <p class="text-muted small mb-0">
+                                Choose hostels with good reviews, secure lockers, and helpful staff. Be alert and
+                                respectful.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-secondary bg-gradient text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="display-6 fw-bold mb-2">Ready to Book Your Stay?</h3>
+                    <p class="lead mb-0">Join thousands of satisfied guests at SK Hostel. Book now and save!</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg me-3" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                        <i class="fas fa-calendar-check me-2"></i>Book Now
+                    </button>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-bed me-2"></i>SK Hostel
+                    </h5>
+                    <p>Your home away from home. Experience comfort, community, and convenience in the heart of the
+                        city.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><span class="text-white-50">Room Booking</span></li>
+                        <li><span class="text-white-50">24/7 Support</span></li>
+                        <li><span class="text-white-50">Laundry Service</span></li>
+                        <li><span class="text-white-50">Kitchen Access</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Main Street, City Center</li>
+                        <li><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@skhostel.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 SK Hostel. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-calendar-check me-2"></i>Book Your Stay
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Check-in Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Check-out Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Room Type</label>
+                                <select class="form-select">
+                                    <option>Shared Dorm - $25/night</option>
+                                    <option>Private Room - $45/night</option>
+                                    <option>Deluxe Suite - $75/night</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Number of Guests</label>
+                                <select class="form-select">
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="your@email.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-control" placeholder="+1 (555) 123-4567">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Special Requests</label>
+                            <textarea class="form-control" rows="3"
+                                placeholder="Any special requests or requirements..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-check me-2"></i>Confirm Booking
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="btn btn-primary rounded-circle p-3 shadow-lg"
+        style="position: fixed; bottom: 30px; right: 30px; z-index: 1000; display: none;" aria-label="Back to Top">
+        <i class="fas fa-arrow-up fa-lg text-light"></i>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<!-- Header -->
-<header class="pt-5 mt-5 text-center bg-white">
-  <div class="container py-5">
-    <h1 class="fw-bold" data-aos="fade-down">About SK Hostel</h1>
-    <p class="text-muted" data-aos="fade-up">Your comfort is our commitment</p>
-  </div>
-</header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Our Journey Timeline -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Our Journey</h2>
-    <div class="row g-4">
-      <div class="col-md-6" data-aos="fade-right">
-        <div class="border-start border-3 border-primary ps-4">
-          <h5 class="fw-bold">2015 – Founded</h5>
-          <p class="text-muted">SK Hostel was founded to provide affordable, hygienic stays for students and travelers.</p>
-        </div>
-      </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <div class="border-start border-3 border-success ps-4">
-          <h5 class="fw-bold">2018 – Expanded Services</h5>
-          <p class="text-muted">Added free WiFi, kitchen access, and daily cleaning for enhanced comfort.</p>
-        </div>
-      </div>
-      <div class="col-md-6" data-aos="fade-right">
-        <div class="border-start border-3 border-info ps-4">
-          <h5 class="fw-bold">2020 – Safety Upgrades</h5>
-          <p class="text-muted">Introduced CCTV, keycard access, and female-only dorms for better safety.</p>
-        </div>
-      </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <div class="border-start border-3 border-warning ps-4">
-          <h5 class="fw-bold">2024 – 10,000+ Guests</h5>
-          <p class="text-muted">Achieved milestone of hosting 10,000+ guests from around the world.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <script>
+        // show or hide the back to top button
+        window.addEventListener("scroll", function () {
+            var btn = document.getElementById("backToTopBtn");
 
-<!-- Mission & Vision -->
-<section class="py-5 bg-white">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-md-6 border-start border-3 border-warning ps-4" data-aos="fade-right">
-        <h3 class="fw-bold">Our Mission</h3>
-        <p class="text-muted">To offer a home-away-from-home experience through quality, comfort, and care.</p>
-      </div>
-      <div class="col-md-6 border-start border-3 border-success ps-4" data-aos="fade-left">
-        <h3 class="fw-bold">Our Vision</h3>
-        <p class="text-muted">To become the most trusted and beloved hostel in the region.</p>
-      </div>
-    </div>
-  </div>
-</section>
+            if (window.scrollY > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        });
 
-<!-- Gallery Section with Cards -->
-<section class="py-5 bg-white">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4" data-aos="fade-up">Gallery</h2>
-    <div class="row g-4">
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card shadow-sm border-0">
-          <img src="Images/SD.jpeg" class="card-img-top rounded" alt="Shared Dorm">
-          <div class="card-body text-center">
-            <p class="card-text text-muted small">Shared Dormitory</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-        <div class="card shadow-sm border-0">
-          <img src="images/fod.jpeg" class="card-img-top rounded" alt="Dining Area">
-          <div class="card-body text-center">
-            <p class="card-text text-muted small">Studying Area</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card shadow-sm border-0">
-          <img src="images/fr.jpeg" class="card-img-top rounded" alt="Family Room">
-          <div class="card-body text-center">
-            <p class="card-text text-muted small">Family Room</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
-        <div class="card shadow-sm border-0">
-          <img src="Images/h.jpeg" class="card-img-top rounded" alt="Hostel Front">
-          <div class="card-body text-center">
-            <p class="card-text text-muted small">Bedroom</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="card shadow-sm border-0">
-          <img src="Images/h2.jpeg" class="card-img-top rounded" alt="Lounge Area">
-          <div class="card-body text-center">
-            <p class="card-text text-muted small">Shared Bedroom</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="350">
-        <div class="card shadow-sm border-0">
-          <img src="Images/h3.jpeg" class="card-img-top rounded" alt="Hallway">
-          <div class="card-body text-center">
-            <p class="card-text text-muted small">Frontview</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        // smooth scroll back to top
+        document.getElementById("backToTopBtn").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        });
+    </script>
 
 
-<!-- FAQ -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4" data-aos="fade-up">Frequently Asked Questions</h2>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Is Wi-Fi free?</button></h2>
-        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">Yes, high-speed Wi-Fi is complimentary.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Are meals provided?</button></h2>
-        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">We provide kitchen access and optional meal plans.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark py-4 text-center text-light">
-  <div class="container">
-    <p class="mb-0">&copy; 2025 SK Hostel. All Rights Reserved.</p>
-  </div>
-</footer>
-<!-- Floating Book Now Button -->
-<button type="button" class="btn btn-secondary rounded-circle shadow-lg position-fixed fs-4 p-3"
-        style="bottom: 25px; right: 25px; z-index: 1050; width: 65px; height: 65px;"
-        data-bs-toggle="modal" data-bs-target="#bookingModal">
-  <i class="fas fa-calendar-check"></i>
-</button>
-
-<!-- Booking Modal -->
-<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold" id="bookingModalLabel">Book Your Stay</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="roomType" class="form-label">Room Type</label>
-            <select class="form-select" id="roomType">
-              <option selected>Choose...</option>
-              <option>Shared Dormitory</option>
-              <option>Private Room</option>
-              <option>Family Room</option>
-              <option>Female Only Dorm</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="checkin" class="form-label">Check-in Date</label>
-            <input type="date" class="form-control" id="checkin">
-          </div>
-          <div class="mb-3">
-            <label for="checkout" class="form-label">Check-out Date</label>
-            <input type="date" class="form-control" id="checkout">
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Floating Chat Button -->
-<button class="btn btn-success rounded-circle shadow-lg position-fixed fs-4 p-3" 
-        style="bottom: 25px; left: 25px; z-index: 1050; width: 65px; height: 65px;" 
-        data-bs-toggle="offcanvas" data-bs-target="#chatBox" aria-controls="chatBox" title="Chat with us">
-  <i class="fas fa-comment-alt"></i>
-</button>
-
-<!-- Offcanvas Chat Box -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="chatBox" aria-labelledby="chatLabel" data-bs-scroll="true" data-bs-backdrop="false">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="chatLabel"><i class="fas fa-comments text-primary me-2"></i>Live Chat</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body d-flex flex-column">
-    <div class="flex-grow-1">
-      <div class="bg-light p-3 rounded mb-3">
-        <p class="mb-1 fw-bold">SK Hostel:</p>
-        <p class="mb-0">Hi there! 👋 How can we help you?</p>
-      </div>
-    </div>
-    <form>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Type a message..." disabled>
-        <button class="btn btn-primary" type="button" disabled><i class="fas fa-paper-plane"></i></button>
-      </div>
-    </form>
-    <small class="text-muted mt-2 d-block text-end">This is a demo chat box</small>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
 </body>
+
 </html>

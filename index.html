@@ -1,305 +1,838 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SK Hostel - Your Home Away From Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Hostel - Your Home Away From Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-light">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#"><i class="fas fa-bed me-2 text-primary"></i>SK Hostel</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-bed me-2"></i>SK Hostel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            <i class="fas fa-calendar-check me-1"></i>Book Now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="vh-100 d-flex align-items-center justify-content-center text-center text-white position-relative"
+        style="background: url('https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg') center/cover no-repeat;">
+        <div class="container position-relative z-1">
+            <h1 class="display-4 fw-bold mb-3">Welcome to SK Hostel</h1>
+            <p class="lead mb-4">Our Hostel is the perfect place to stay for budget-minded travelers. With free Wi-Fi
+                and a continental breakfast included in the price of your stay, you’ll be able to save your money for
+                exploring all that the city has to offer.</p>
+
+            <form class="row g-2 justify-content-center  p-3" style="max-width: 900px;">
+                <div class="col-md-3">
+                    <input type="date" class="form-control" placeholder="Check-in Date" />
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control" placeholder="Check-out Date" />
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control" placeholder="Adults" min="1" value="1" />
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control" placeholder="Children" min="0" value="0" />
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-warning w-100 fw-bold">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    </section>
+
+    <!-- About SK Hostel -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-4">About SK Hostel</h2>
+                    <p class="lead">SK Hostel offers a unique blend of comfort, community, and convenience. Located in
+                        the city center, we provide modern amenities and a welcoming atmosphere for travelers, students,
+                        and professionals.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <img src="https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
+                                alt="Prime Location" class="rounded-circle"
+                                style="width: 120px; height: 120px; object-fit: cover;">
+                        </div>
+                        <h4>Prime Location</h4>
+                        <p>Located in the heart of the city with easy access to public transport, restaurants, and
+                            attractions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
+                                alt="Community" class="rounded-circle"
+                                style="width: 120px; height: 120px; object-fit: cover;">
+                        </div>
+                        <h4>Community</h4>
+                        <p>Meet like-minded travelers and locals in our common areas designed for social interaction.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <img src="https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
+                                alt="Safe & Secure" class="rounded-circle"
+                                style="width: 120px; height: 120px; object-fit: cover;">
+                        </div>
+                        <h4>Safe & Secure</h4>
+                        <p>24/7 security, CCTV monitoring, and secure lockers to ensure your safety and peace of mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features/Facilities -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Facilities</h2>
+                <p class="lead">Everything you need for a comfortable stay</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.pexels.com/photos/4099354/pexels-photo-4099354.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                            class="card-img-top" alt="Free WiFi" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-wifi fa-lg"></i>
+                            </div>
+                            <h5 class="card-title">Free WiFi</h5>
+                            <p class="card-text">High-speed internet access throughout the hostel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                            class="card-img-top" alt="Air Conditioning" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-snowflake fa-lg"></i>
+                            </div>
+                            <h5 class="card-title">Air Conditioning</h5>
+                            <p class="card-text">Climate-controlled rooms for your comfort</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                            class="card-img-top" alt="Kitchen" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-utensils fa-lg"></i>
+                            </div>
+                            <h5 class="card-title">Kitchen</h5>
+                            <p class="card-text">Fully equipped shared kitchen facilities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.pexels.com/photos/6197119/pexels-photo-6197119.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                            class="card-img-top" alt="Laundry" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-tshirt fa-lg"></i>
+                            </div>
+                            <h5 class="card-title">Laundry</h5>
+                            <p class="card-text">Washing and drying facilities available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">What Our Guests Say</h2>
+                <p class="lead">Real experiences from real travelers</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="text-center">
+                                    <div class="mb-4">
+                                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+                                            alt="Sarah Johnson" class="rounded-circle mb-3"
+                                            style="width: 80px; height: 80px; object-fit: cover;">
+                                        <i class="fas fa-quote-left fa-2x text-primary"></i>
+                                    </div>
+                                    <blockquote class="blockquote">
+                                        <p class="mb-4">"SK Hostel exceeded my expectations! Clean rooms, friendly
+                                            staff, and a great location. I'll definitely be back on my next visit."</p>
+                                    </blockquote>
+                                    <div>
+                                        <h6 class="mb-0">Sarah Johnson</h6>
+                                        <small class="text-muted">Traveler from USA</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="text-center">
+                                    <div class="mb-4">
+                                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+                                            alt="Mike Chen" class="rounded-circle mb-3"
+                                            style="width: 80px; height: 80px; object-fit: cover;">
+                                        <i class="fas fa-quote-left fa-2x text-primary"></i>
+                                    </div>
+                                    <blockquote class="blockquote">
+                                        <p class="mb-4">"Perfect for solo travelers! I met amazing people and felt safe
+                                            throughout my stay. The facilities are top-notch."</p>
+                                    </blockquote>
+                                    <div>
+                                        <h6 class="mb-0">Mike Chen</h6>
+                                        <small class="text-muted">Student from Canada</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="text-center">
+                                    <div class="mb-4">
+                                        <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+                                            alt="Emma Rodriguez" class="rounded-circle mb-3"
+                                            style="width: 80px; height: 80px; object-fit: cover;">
+                                        <i class="fas fa-quote-left fa-2x text-primary"></i>
+                                    </div>
+                                    <blockquote class="blockquote">
+                                        <p class="mb-4">"Great value for money! The common areas are spacious and the
+                                            kitchen is well-equipped. Highly recommended!"</p>
+                                    </blockquote>
+                                    <div>
+                                        <h6 class="mb-0">Emma Rodriguez</h6>
+                                        <small class="text-muted">Backpacker from Spain</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-primary rounded-circle p-3"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-primary rounded-circle p-3"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Room Pricing</h2>
+                <p class="lead">Affordable rates for every traveler</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow border-0">
+                        <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                            class="card-img-top" alt="Shared Dorm" style="height: 200px; object-fit: cover;">
+                        <div class="card-header bg-light text-center py-4">
+                            <h4 class="card-title">Shared Dorm</h4>
+                            <div class="display-6 fw-bold text-primary">Rs.500<small
+                                    class="fs-6 text-muted">/night</small></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>6-8 beds per room</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Shared bathroom</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Lockers provided</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Common area access</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Free WiFi</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">
+                                Select Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow border-secondary">
+                        <img src="https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                            class="card-img-top" alt="Private Room" style="height: 200px; object-fit: cover;">
+                        <div class="card-header bg-secondary text-white text-center py-4">
+                            <h4 class="card-title">Private Room</h4>
+                            <div class="display-6 fw-bold">Rs.2500<small class="fs-6">/night</small></div>
+                            <span class="badge bg-warning text-dark">Popular</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Single/Double bed</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Private bathroom</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Air conditioning</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Work desk</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Free WiFi</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                Select Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow border-0">
+                        <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                            class="card-img-top" alt="Deluxe Suite" style="height: 200px; object-fit: cover;">
+                        <div class="card-header bg-light text-center py-4">
+                            <h4 class="card-title">Deluxe Suite</h4>
+                            <div class="display-6 fw-bold text-primary">Rs.5500<small
+                                    class="fs-6 text-muted">/night</small></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Queen size bed</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Private bathroom</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Kitchenette</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Balcony view</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Premium amenities</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">
+                                Select Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Additional Services-->>
+    <section id="additional-services" class="p-5 bg-light" data-aos="fade-up">
+        <h2>Additional Services</h2>
+        <div class="row g-4 mt-4">
+            <div class="col-md-3">
+                <div class="card p-4 shadow-sm border-0 text-center h-100">
+                    <i class="fas fa-tshirt fa-2x mb-3 text-primary"></i>
+                    <h5>Laundry Service</h5>
+                    <p>There are laundry facilities and kitchen facilities for guests to use.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4 shadow-sm border-0 text-center h-100">
+                    <i class="fas fa-egg fa-2x mb-3 text-info"></i>
+                    <h5>Breakfast Service</h5>
+                    <p>The hostel offers a free breakfast every morning, as well as free WiFi and linens.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4 shadow-sm border-0 text-center h-100">
+                    <i class="fas fa-bus fa-2x mb-3 text-warning"></i>
+                    <h5>Shuttle Service</h5>
+                    <p>Avoid the hassle of airport transfers and take advantage of our complimentary shuttle service.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4 shadow-sm border-0 text-center h-100">
+                    <i class="fas fa-wine-glass-alt fa-2x mb-3 text-danger"></i>
+                    <h5>Local Beers and Wines</h5>
+                    <p>There is also a bar on-site that serves local beers and wines, and a pub crawl is organized once
+                        a week.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4 shadow-sm border-0 text-center h-100 mt-4">
+                    <i class="fas fa-beer fa-2x mb-3 text-warning"></i>
+                    <h5>Pub Crawl Once a Week</h5>
+                    <p>A bar on-site that serves local beers and wines, and a pub crawl is organized once a week.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4 shadow-sm border-0 text-center h-100 mt-4">
+                    <i class="fas fa-map fa-2x mb-3 text-info"></i>
+                    <h5>Free City Map</h5>
+                    <p>This map will help you find your way around the city, and show you where all the interesting
+                        attractions are.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4 shadow-sm border-0 text-center h-100 mt-4">
+                    <i class="fas fa-wifi fa-2x mb-3 text-primary"></i>
+                    <h5>Free WiFi</h5>
+                    <p>Stay connected while on-the-go with complimentary WiFi throughout the hotel.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4 shadow-sm border-0 text-center h-100 mt-4">
+                    <i class="fas fa-clock fa-2x mb-3 text-danger"></i>
+                    <h5>24 Hour Reception</h5>
+                    <p>The hostel has a 24-hour reception, and security lockers are available for guests to store their
+                        belongings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Nearby section-->
+    <section id="nearby" class="p-5">
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <img src="https://images.pexels.com/photos/159933/pexels-photo-159933.jpeg?auto=compress&cs=tinysrgb&w=500"
+                    alt="Things to do nearby" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2>What to do nearby...</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Explore the city <span>15 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Nearby attraction <span>15 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Go for a walk or bike ride <span>15 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Go to a nearby bar or restaurant <span>15 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Go to a nearby market <span>15 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Weekly pub crawl <span>15 min</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Staff Section-->
+    <section id="our-staff" class="p-5 bg-dark text-light">
+        <h2>Our Staff</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-4 border-0">
+                    <img src="https://images.pexels.com/photos/1181339/pexels-photo-1181339.jpeg?auto=compress&cs=tinysrgb&w=500"
+                        class="img-fluid rounded mb-3">
+                    <h5>Alfredo Lubin</h5>
+                    <p>Hostel Manager</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 border-0">
+                    <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=500"
+                        class="img-fluid rounded mb-3">
+                    <h5>Alfredo Stanton</h5>
+                    <p>Reservationist</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 border-0">
+                    <img src="https://images.pexels.com/photos/619933/pexels-photo-619933.jpeg?auto=compress&cs=tinysrgb&w=500"
+                        class="img-fluid rounded mb-3">
+                    <h5>Tiana Mango</h5>
+                    <p>Front Desk Staff</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Review Section-->
+
+    <section id="positive-reviews" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">98% POSITIVE REVIEWS</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <div class="bg-primary p-4 rounded shadow text-light">
+                        <div class="mb-4">
+                            <i class="fas fa-star fa-2x text-warning me-2"></i>
+                            <i class="fas fa-star fa-2x text-warning me-2"></i>
+                            <i class="fas fa-star fa-2x text-warning me-2"></i>
+                            <i class="fas fa-star fa-2x text-warning me-2"></i>
+                            <i class="fas fa-star fa-2x text-warning me-2"></i>
+                        </div>
+                        <h4>Excellent Experience</h4>
+                        <p>Our well-rated SK Hostel is perfect for budget-minded travelers. With slopes for all levels
+                            of skiers, our resort is sure to please everyone in your group.</p>
+
+                        <h5>We are on</h5>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="#" aria-label="TripAdvisor"><i
+                                    class="fab fa-tripadvisor fa-2x text-light me-2"></i></a>
+                            <a href="#" aria-label="Airbnb"><i class="fab fa-airbnb fa-2x text-light me-2"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-2x text-light me-2"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-2x text-light me-2"></i></a>
+                            <a href="#" aria-label="Instagram"><i
+                                    class="fab fa-instagram fa-2x text-light me-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>Privacy</h5>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100">
+                            70%
+                        </div>
+                    </div>
+
+                    <h5>Space</h5>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">
+                            85%
+                        </div>
+                    </div>
+
+                    <h5>Location</h5>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">
+                            80%
+                        </div>
+                    </div>
+
+                    <h5>Amenities</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 96%" aria-valuenow="96"
+                            aria-valuemin="0" aria-valuemax="100">
+                            96%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Blog Section-->
+    <section id="blog" class="p-5 bg-light" data-aos="fade-up">
+        <h2>Latest Blog Posts</h2>
+        <p>Stay up to date with stories, tips, and news from SK Hostel</p>
+
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                        class="card-img-top" alt="Blog 1">
+                    <div class="card-body">
+                        <h5 class="card-title">5 Reasons to Stay at SK Hostel</h5>
+                        <p class="card-text">Discover why SK Hostel is the preferred choice for budget travelers looking
+                            for a comfortable stay in the city.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="https://images.pexels.com/photos/904277/pexels-photo-904277.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                        class="card-img-top" alt="Blog 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Hidden Local Spots</h5>
+                        <p class="card-text">A guide to the best kept secrets in the city — from food trucks to rooftop
+                            bars.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="https://images.pexels.com/photos/904277/pexels-photo-904277.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+                        class="card-img-top" alt="Blog 3">
+                    <div class="card-body">
+                        <h5 class="card-title">How to Make the Most of Your Stay</h5>
+                        <p class="card-text">Tips for navigating the city, making friends, and experiencing its rich
+                            culture.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Location Section-->
+
+    <section id="location" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Location</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <h5>st. Example 50, 118 00 Prague, Czech Republic</h5>
+                    <p>Daily 10am - 8pm</p>
+                    <p>Call us or Email us</p>
+                    <ul class="list-unstyled mt-4">
+                        <li><i class="fas fa-phone-alt me-2 text-primary"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2 text-info"></i> info@skhostel.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="shadow p-3 rounded" style="height: 500px; overflow: hidden">
+                        <iframe src="https://www.google.com/maps?q=Prague&output=embed" width="100%" height="100%"
+                            frameborder="0" style="border:0;" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-secondary bg-gradient text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="display-6 fw-bold mb-2">Ready to Book Your Stay?</h3>
+                    <p class="lead mb-0">Join thousands of satisfied guests at SK Hostel. Book now and save!</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg me-3" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                        <i class="fas fa-calendar-check me-2"></i>Book Now
+                    </button>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-bed me-2"></i>SK Hostel
+                    </h5>
+                    <p>Your home away from home. Experience comfort, community, and convenience in the heart of the
+                        city.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><span class="text-white-50">Room Booking</span></li>
+                        <li><span class="text-white-50">24/7 Support</span></li>
+                        <li><span class="text-white-50">Laundry Service</span></li>
+                        <li><span class="text-white-50">Kitchen Access</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Main Street, City Center</li>
+                        <li><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@skhostel.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 SK Hostel. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-calendar-check me-2"></i>Book Your Stay
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Check-in Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Check-out Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Room Type</label>
+                                <select class="form-select">
+                                    <option>Shared Dorm - $25/night</option>
+                                    <option>Private Room - $45/night</option>
+                                    <option>Deluxe Suite - $75/night</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Number of Guests</label>
+                                <select class="form-select">
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="your@email.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-control" placeholder="+1 (555) 123-4567">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Special Requests</label>
+                            <textarea class="form-control" rows="3"
+                                placeholder="Any special requests or requirements..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-check me-2"></i>Confirm Booking
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="btn btn-primary rounded-circle p-3 shadow-lg"
+        style="position: fixed; bottom: 30px; right: 30px; z-index: 1000; display: none;" aria-label="Back to Top">
+        <i class="fas fa-arrow-up fa-lg text-light"></i>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
- <!-- Hero Carousel -->
-<div id="heroCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
-  <div class="carousel-inner">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="d-block w-100" alt="Hostel">
-      <div class="position-absolute top-50 start-50 translate-middle text-center bg-dark bg-opacity-50 p-4 rounded" data-aos="fade-up" data-aos-delay="200">
-        <h1 class="fw-bold text-white fs-3 fs-md-1" data-aos="zoom-in" data-aos-delay="400">Welcome to SK Hostel</h1>
-        <p class="text-white fs-6 fs-md-5" data-aos="fade-up" data-aos-delay="600">Your cozy, affordable stay in the heart of the city</p>
-        <a href="rooms.html" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in-up" data-aos-delay="800">Explore Rooms</a>
-      </div>
-    </div>
+    <script>
+        // show or hide the back to top button
+        window.addEventListener("scroll", function () {
+            var btn = document.getElementById("backToTopBtn");
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" class="d-block w-100" alt="Room">
-      <div class="position-absolute top-50 start-50 translate-middle text-center bg-dark bg-opacity-50 p-4 rounded" data-aos="fade-up" data-aos-delay="200">
-        <h1 class="fw-bold text-white fs-3 fs-md-1" data-aos="zoom-in" data-aos-delay="400">Comfortable & Modern</h1>
-        <p class="text-white fs-6 fs-md-5" data-aos="fade-up" data-aos-delay="600">Equipped with everything you need for a peaceful stay</p>
-        <a href="services.html" class="btn btn-light btn-lg mt-3" data-aos="zoom-in-up" data-aos-delay="800">See Services</a>
-      </div>
-    </div>
-  </div> 
+            if (window.scrollY > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        });
 
-  <!-- Prev/Next Buttons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div> 
-
-<!-- Counters as Cards -->
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4 text-center">
-      <div class="col-md-3" data-aos="fade-up">
-        <div class="card bg-primary text-white h-100">
-          <div class="card-body">
-            <i class="fas fa-smile fa-2x mb-2"></i>
-            <h4 class="fw-bold">10,000+</h4>
-            <p class="mb-0">Happy Guests</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
-        <div class="card bg-success text-white h-100">
-          <div class="card-body">
-            <i class="fas fa-calendar-check fa-2x mb-2"></i>
-            <h4 class="fw-bold">9 Years</h4>
-            <p class="mb-0">Of Service</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="card bg-info text-white h-100">
-          <div class="card-body">
-            <i class="fas fa-star fa-2x mb-2"></i>
-            <h4 class="fw-bold">4.8/5</h4>
-            <p class="mb-0">Guest Rating</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="card bg-warning text-dark h-100">
-          <div class="card-body">
-            <i class="fas fa-thumbs-up fa-2x mb-2"></i>
-            <h4 class="fw-bold">100%</h4>
-            <p class="mb-0">Satisfaction</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Facilities Section -->
-<section class="py-5 bg-light" id="facilities">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold text-teal" data-aos="fade-up">Our Facilities</h2>
-      <p class="text-muted" data-aos="fade-up" data-aos-delay="100">We offer everything you need for a safe and comfortable stay.</p>
-    </div>
-    <div class="row g-4 text-center">
-      <div class="col-md-4" data-aos="zoom-in">
-        <div class="p-4 border rounded bg-white shadow-sm h-100">
-          <i class="fas fa-wifi fa-2x text-info mb-3"></i>
-          <h5 class="fw-bold">High-Speed Wi-Fi</h5>
-          <p class="text-muted">Stay connected with fast and free internet access throughout the hostel.</p>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="p-4 border rounded bg-white shadow-sm h-100">
-          <i class="fas fa-utensils fa-2x text-warning mb-3"></i>
-          <h5 class="fw-bold">Home-Cooked Food</h5>
-          <p class="text-muted">Enjoy hygienic and healthy meals served daily with care.</p>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="p-4 border rounded bg-white shadow-sm h-100">
-          <i class="fas fa-lock fa-2x text-danger mb-3"></i>
-          <h5 class="fw-bold">24x7 Security</h5>
-          <p class="text-muted">Your safety is our priority with CCTV and on-site security.</p>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="p-4 border rounded bg-white shadow-sm h-100">
-          <i class="fas fa-bath fa-2x text-primary mb-3"></i>
-          <h5 class="fw-bold">Clean Bathrooms</h5>
-          <p class="text-muted">Well-maintained and sanitized restrooms available on every floor.</p>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-        <div class="p-4 border rounded bg-white shadow-sm h-100">
-          <i class="fas fa-dumbbell fa-2x text-success mb-3"></i>
-          <h5 class="fw-bold">Fitness Area</h5>
-          <p class="text-muted">Stay fit with access to a basic workout area and open terrace yoga space.</p>
-        </div>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
-        <div class="p-4 border rounded bg-white shadow-sm h-100">
-          <i class="fas fa-tshirt fa-2x text-secondary mb-3"></i>
-          <h5 class="fw-bold">Laundry Service</h5>
-          <p class="text-muted">On-site laundry options available at affordable prices.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Testimonials Carousel -->
-<section class="py-5 bg-white">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="fw-bold" data-aos="fade-up">What Our Guests Say</h2>
-    </div>
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active text-center">
-          <blockquote class="blockquote">
-            <p class="mb-3">“Such a warm and welcoming hostel! Highly recommend it.”</p>
-            <footer class="blockquote-footer">Anjali from Mumbai</footer>
-          </blockquote>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">
-            <p class="mb-3">“A clean and comfortable stay. Loved the location too.”</p>
-            <footer class="blockquote-footer">John from Goa</footer>
-          </blockquote>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">
-            <p class="mb-3">“The best budget hostel experience I’ve had in years!”</p>
-            <footer class="blockquote-footer">Priya from Chennai</footer>
-          </blockquote>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="py-5 bg-primary text-white text-center">
-  <div class="container">
-    <h2 class="fw-bold mb-3" data-aos="zoom-in">Ready to Book Your Stay?</h2>
-    <p class="mb-4">Experience comfort and convenience at SK Hostel</p>
-    <a href="contact.html" class="btn btn-light btn-lg"><i class="fas fa-calendar-check me-2"></i>Book Now</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark py-4 text-center text-light">
-  <div class="container">
-    <p class="mb-0">&copy; 2025 SK Hostel. All Rights Reserved.</p>
-  </div>
-</footer>
-<!-- Floating Book Now Button -->
-<button type="button" class="btn btn-secondary rounded-circle shadow-lg position-fixed fs-4 p-3"
-        style="bottom: 25px; right: 25px; z-index: 1050; width: 65px; height: 65px;"
-        data-bs-toggle="modal" data-bs-target="#bookingModal">
-  <i class="fas fa-calendar-check"></i>
-</button>
-
-<!-- Booking Modal -->
-<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold" id="bookingModalLabel">Book Your Stay</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="roomType" class="form-label">Room Type</label>
-            <select class="form-select" id="roomType">
-              <option selected>Choose...</option>
-              <option>Shared Dormitory</option>
-              <option>Private Room</option>
-              <option>Family Room</option>
-              <option>Female Only Dorm</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="checkin" class="form-label">Check-in Date</label>
-            <input type="date" class="form-control" id="checkin">
-          </div>
-          <div class="mb-3">
-            <label for="checkout" class="form-label">Check-out Date</label>
-            <input type="date" class="form-control" id="checkout">
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Floating Chat Button -->
-<button class="btn btn-success rounded-circle shadow-lg position-fixed fs-4 p-3" 
-        style="bottom: 25px; left: 25px; z-index: 1050; width: 65px; height: 65px;" 
-        data-bs-toggle="offcanvas" data-bs-target="#chatBox" aria-controls="chatBox" title="Chat with us">
-  <i class="fas fa-comment-alt"></i>
-</button>
-
-<!-- Offcanvas Chat Box -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="chatBox" aria-labelledby="chatLabel" data-bs-scroll="true" data-bs-backdrop="false">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="chatLabel"><i class="fas fa-comments text-primary me-2"></i>Live Chat</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body d-flex flex-column">
-    <div class="flex-grow-1">
-      <div class="bg-light p-3 rounded mb-3">
-        <p class="mb-1 fw-bold">SK Hostel:</p>
-        <p class="mb-0">Hi there! 👋 How can we help you?</p>
-      </div>
-    </div>
-    <form>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Type a message..." disabled>
-        <button class="btn btn-primary" type="button" disabled><i class="fas fa-paper-plane"></i></button>
-      </div>
-    </form>
-    <small class="text-muted mt-2 d-block text-end">This is a demo chat box</small>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
-
+        // smooth scroll back to top
+        document.getElementById("backToTopBtn").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        });
+    </script>
 
 
 </body>
+
 </html>
